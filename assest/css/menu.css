@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+.sidebar {
+    position:fixed;
+    width: 120px;
+    height: 100vh;
+    background-color: rgba(55, 36, 224, 0.603);
+    z-index:1;
+}
+
+.sidebar a {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    transition: all 0.3s ease;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 130px;
+}
+.sidebar a:hover {
+    background-color: rgb(2, 18, 66);
+    text-decoration: underline;
+  }
+
+body {
+    background-image:linear-gradient(rgb(0, 0, 0,0.7),rgb(0, 0, 0,0.7)),url('https://img.freepik.com/free-photo/top-view-american-food-with-copy-space_23-2148454908.jpg?size=626&ext=jpg');
+    background-size: cover;
+    object-fit:contain;
+    background-blend-mode:darken;
+}
+
+
+.cards {
+    height: 450px;
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items:  center;
+    justify-content: space-evenly;
+    margin: 150px;
+    margin-top: 0px;
+    margin-left: 200px;
+    margin-bottom: 100px;
+    z-index: -1;
+}
+
+.line1 {
+    background-color: white;
+    width: 900px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
+    text-decoration:underline;
+    letter-spacing: 4px;
+    
+}
+
+.line2 {
+    background-color: white;
+    width: 900px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
+    text-decoration:underline;
+    letter-spacing: 4px;
+    
+}
+ 
+.card img {
+    width: 150px;
+    height: 110px;
+    border-radius: 15%;
+}
+
+
+.card {    
+    height: 200px;
+    width: 150px;
+    background-color: black;
+    border-radius: 15%;
+    margin: 25px; 
+    box-shadow: 10px 10px 9px rgb(124, 124, 124);
+    transform-style: preserve-3d;
+    transition: all 0.5s;
+}
+
+.card:hover {
+    border-radius: 15px;
+    box-shadow: 10px 10px 9px rgba(236, 71, 71, 0.637);
+    transform: rotateY(180deg);
+    cursor: -webkit-grab; cursor: grab;
+}
+.front {
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    text-align: center;
+    backface-visibility: hidden;
+    transform: perspective(600px) rotateY(0deg);
+    position:absolute;
+}
+.front p {
+    padding-top: 20px;
+}
+
+
+.back {
+    backface-visibility: hidden;
+    color: rgb(41, 79, 194);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align:center;
+    transform: perspective(600px) rotateY(180deg);
+   padding-top: 20px;
+}
+
+
+
+
+.h1 {
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    letter-spacing: 3px;
+    text-decoration: overline underline;
+    font-size: x-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
